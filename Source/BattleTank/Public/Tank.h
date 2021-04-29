@@ -39,6 +39,6 @@ public:
 	void SetTurretReference(UTankTurret* TurretToSet);
 
 	UPROPERTY(EditAnywhere)
-	float LaunchSpeed = 100000.f;
+	float LaunchSpeed = 4000.f;
 
 };
