@@ -45,6 +45,11 @@
 		"directory": "D:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
 	},
 	{
+		"file": "D:\\\\Unreal Projects\\\\BattleTank\\\\Source\\\\BattleTank\\\\Private\\\\TankTurret.cpp",
+		"command": "cl.exe @\"D:\\Unreal Projects\\BattleTank\\.vscode\\compileCommands_Default\\BattleTank.190.rsp\"",
+		"directory": "D:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
 		"file": "D:\\\\Unreal Projects\\\\BattleTank\\\\Source\\\\BattleTank\\\\Public\\\\Tank.h",
 		"command": "cl.exe @\"D:\\Unreal Projects\\BattleTank\\.vscode\\compileCommands_Default\\BattleTank.190.rsp\"",
 		"directory": "D:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
@@ -61,6 +66,11 @@
 	},
 	{
 		"file": "D:\\\\Unreal Projects\\\\BattleTank\\\\Source\\\\BattleTank\\\\Public\\\\TankBarrel.h",
+		"command": "cl.exe @\"D:\\Unreal Projects\\BattleTank\\.vscode\\compileCommands_Default\\BattleTank.190.rsp\"",
+		"directory": "D:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "D:\\\\Unreal Projects\\\\BattleTank\\\\Source\\\\BattleTank\\\\Public\\\\TankTurret.h",
 		"command": "cl.exe @\"D:\\Unreal Projects\\BattleTank\\.vscode\\compileCommands_Default\\BattleTank.190.rsp\"",
 		"directory": "D:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
 	},
