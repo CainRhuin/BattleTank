@@ -20,5 +20,5 @@ public:
 
 	// Max Force (Per Track) In Neutons
 	UPROPERTY(EditDefaultsOnly, Category = Movement)
-	float TrackMaxDrivingForce = 1000000.f; // 400000 is "Sensible"
+	float TrackMaxDrivingForce = 4000000.f; // 400000 is "Sensible"
 };
