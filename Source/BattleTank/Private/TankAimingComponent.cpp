@@ -28,7 +28,10 @@ void UTankAimingComponent::AimAt(FVector WorldSpaceAim, float LaunchSpeed)
 		OutLaunchVelocity, 
 		StartLocation, 
 		WorldSpaceAim, 
-		LaunchSpeed, 
+		LaunchSpeed,
+		false,
+		0.f,
+		0.f, 
 		ESuggestProjVelocityTraceOption::DoNotTrace
 	);
 
