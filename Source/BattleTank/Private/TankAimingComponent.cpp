@@ -16,10 +16,10 @@ UTankAimingComponent::UTankAimingComponent()
 }
 
 
-void UTankAimingComponent::AimAt(FVector WorldSpaceAim, float LaunchSpeed)
+void UTankAimingComponent::AimAt(FVector HitLocation)
 {
 	if (!ensure(Barrel)){return;}
-	if (!ensure(Turret)){return;}
+	// if (!ensure(Turret)){return;} TODO Remove?
 
 	FVector OutLaunchVelocity;
 	FVector StartLocation = Barrel->GetSocketLocation(FName("Projectile"));
@@ -29,7 +29,7 @@ void UTankAimingComponent::AimAt(FVector WorldSpaceAim, float LaunchSpeed)
 		this, 
 		OutLaunchVelocity, 
 		StartLocation, 
-		WorldSpaceAim, 
+		HitLocation, 
 		LaunchSpeed,
 		false,
 		0.f,
