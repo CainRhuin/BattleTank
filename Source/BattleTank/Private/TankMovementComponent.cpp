@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Total Rhuination Games
 
 
 #include "TankMovementComponent.h"
@@ -23,7 +23,6 @@ void UTankMovementComponent::IntendTurnRight(float Throw)
 	if (!LeftTrack || !RightTrack) { return; }
 	LeftTrack->SetThrottle(Throw);
 	RightTrack->SetThrottle(-Throw);
-	// TODO prevent double speed due to dual control use
 }
 
 void UTankMovementComponent::RequestDirectMove(const FVector& MoveVelocity, bool bForceMaxSpeed)
@@ -37,6 +36,4 @@ void UTankMovementComponent::RequestDirectMove(const FVector& MoveVelocity, bool
 
 	auto RightMovement = FVector::CrossProduct(TankForward, AIForwardIntention).Z;
 	IntendTurnRight(RightMovement);
- 
-	// UE_LOG(LogTemp, Warning, TEXT("%s vectoring to : %s"), *TankName, *MoveVelocityString);
 }
