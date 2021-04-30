@@ -20,6 +20,7 @@ private:
 	// Sets default values for this pawn's properties
 	ATank();
 
+	// TODO Remove once firing is moved to AimingComponent
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
 	float LaunchSpeed = 4000.f;
 
@@ -38,7 +39,6 @@ protected:
 
 	UPROPERTY(BlueprintReadOnly)
 	UTankAimingComponent* TankAimingComponent = nullptr;
-
 
 public:	
 	// Called when the game starts or when spawned
