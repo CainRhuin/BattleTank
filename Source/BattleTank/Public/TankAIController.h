@@ -22,6 +22,9 @@ public:
 
 private:
 
+protected:
+
 	// How close the AI can get to the player
-	float AcceptanceRadius = 3000.f;
+	UPROPERTY(EditDefaultsOnly, Category = "Movement")
+	float AcceptanceRadius = 8000.f;
 };

@@ -21,11 +21,20 @@ public:
 
 	// Max Force (Per Track) In Neutons
 	UPROPERTY(EditDefaultsOnly, Category = "Movement")
-	float TrackMaxDrivingForce = 4000000.f; // 400000 is "Sensible"
+	float TrackMaxDrivingForce = 20000000.f; // 400000 is "Sensible"
 
 private:
 
 	UTankTrack();
 
-	virtual void TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+	virtual void BeginPlay() override;
+
+	UFUNCTION()
+	void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit);
+
+	void DriveTrack();
+
+	void ApplySidewaysForce();
+
+	float CurrentThrottle = 0;
 };
