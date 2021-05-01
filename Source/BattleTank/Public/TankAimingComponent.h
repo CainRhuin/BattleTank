@@ -39,7 +39,7 @@ public:
 
 	EFiringState GetFiringState() const;
 
-	UPROPERTY(BlueprintReadOnly, Category = "Ammo")
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "Ammo")
 	float AmmoCount = 2;
 
 protected:
