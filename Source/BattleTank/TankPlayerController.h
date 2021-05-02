@@ -31,6 +31,11 @@ public:
 
 private:
 
+	void SetPawn(APawn* InPawn);
+
+	UFUNCTION()
+	void OnPossessedTankDeath();
+
 	void AimTowardsCrosshair();
 
 	bool GetSightRayHitLocation(FVector& OutHitLocation) const;
