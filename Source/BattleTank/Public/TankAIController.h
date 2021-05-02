@@ -22,6 +22,11 @@ public:
 
 private:
 
+	virtual void SetPawn(APawn* InPawn) override;
+
+	UFUNCTION()
+	void OnPossessedTankDeath();
+
 protected:
 
 	// How close the AI can get to the player
